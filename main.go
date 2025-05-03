@@ -19,6 +19,7 @@ func Countdown(start int, writer ...io.Writer) {
 	}
 
 	for {
+
 		if start == 0 {
 			fmt.Fprintln(output, "Go!")
 			return
