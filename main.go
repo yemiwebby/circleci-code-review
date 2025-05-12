@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	Countdown(3)
+	Countdown(4)
 }
 
 func Countdown(start int, writer ...io.Writer) {
