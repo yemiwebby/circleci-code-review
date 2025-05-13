@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	Countdown(3)
+	Countdown(4)
 }
 
 func Countdown(start int, writer ...io.Writer) {
@@ -27,7 +27,7 @@ func Countdown(start int, writer ...io.Writer) {
 
 		fmt.Fprintln(output, start)
 		time.Sleep(time.Second * 1)
-		start = start - 1
+		start--
 	}
 
 }
